@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <title>İletişim - Şifa Eli Hasta Bakım Hizmetleri</title>
+  <title>İletişim - Yüncü Hasta Bakım</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="İletişim, randevu, telefon, adres, e-posta, hasta bakımı" name="keywords">
-  <meta content="Bizimle iletişime geçin. Şifa Eli hasta bakım hizmetleri için telefon, adres ve e-posta bilgileri. Randevu ve bilgi alın." name="description">
+  <meta content="Yüncü Hasta Bakım, iletişim, telefon, adres, e-posta, randevu, hasta bakımı, bakıcı hizmetleri" name="keywords">
+  <meta content="Yüncü Hasta Bakım ile iletişime geçin. Telefon, adres ve e-posta bilgilerimizle bize ulaşın, hizmetlerimiz hakkında bilgi ve randevu alın." name="description">
 
   <!-- Google Web Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +26,53 @@
 
   <!-- Template Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
+    <style>
+      .floating-buttons {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .floating-buttons a {
+        width: auto; /* Adjust width automatically */
+        height: 60px;
+        border-radius: 30px; /* Make it pill-shaped */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 18px; /* Slightly smaller font for text */
+        text-decoration: none;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+        padding: 0 20px; /* Add padding */
+      }
+
+      .floating-buttons a:hover {
+        transform: scale(1.1);
+      }
+      
+      .floating-buttons a i {
+        font-size: 24px; /* Keep icon size */
+        margin-right: 10px; /* Space between icon and text */
+      }
+
+      .whatsapp-btn {
+        background-color: #25d366;
+      }
+
+      .phone-btn {
+        background-color: #007bff;
+      }
+
+      .backup-phone-btn {
+        background-color: #6c757d;
+      }
+    </style>
 </head>
 
 <body>
@@ -76,7 +123,7 @@
           <a href="blog.html" class="nav-item nav-link">Blog</a>
           <a href="contact.html" class="nav-item nav-link active">İletişim</a>
         </div>
-        <a href="appointment.html" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">Randevu Al</a>
+        <a href="https://wa.me/905462345989" target="_blank" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">Randevu Al</a>
       </div>
     </nav>
   </div>
@@ -162,7 +209,7 @@
                                 <div class="bg-white d-flex align-items-center justify-content-center mb-3" style="width: 90px; height: 90px; border-radius: 50px;"><i class="fa fa-envelope-open fa-2x text-primary"></i></div>
                                 <h4 class="text-dark">Email</h4>
                                 <p class="mb-0 text-white">salimgulbasz5678@gmail.com</p>
-                                <p class="mb-0 text-white">destek@sifaelihizmet.com</p>
+                                
             </div>
           </div>
         </div>
@@ -189,7 +236,7 @@
         <div class="col-md-6 col-lg-6 col-xl-3">
           <div class="footer-item d-flex flex-column">
             <a href="index.html" class="footer-logo mb-4">
-                <img src="img/logo.png" alt="Yüncü Hasta Bakımı" style="max-width: 200px;">
+                <img src="img/logo.png" alt="Yüncü Hasta Bakım" style="max-width: 200px;">
               </a>
             <p>Sevdiklerinizin sağlık ve bakım ihtiyaçları için profesyonel, güvenilir ve şefkatli çözümler sunuyoruz.</p>
             <div class="d-flex align-items-center">
@@ -246,8 +293,25 @@
   </div>
   <!-- Copyright End -->
 
-  <!-- Back to Top -->
-  <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+  <!-- Floating Buttons Start -->
+    <div class="floating-buttons">
+      <a href="https://wa.me/905462345989" target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp</span>
+      </a>
+      <a href="tel:05462345989" class="phone-btn">
+        <i class="fa fa-phone-alt"></i>
+        <span>Hemen Ara</span>
+      </a>
+      <a href="tel:05077152497" class="backup-phone-btn">
+        <i class="fa fa-phone-alt"></i>
+        <span>Yedek Telefon</span>
+      </a>
+    </div>
+    <!-- Floating Buttons End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
 
   <!-- JavaScript Libraries -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
